@@ -1,0 +1,153 @@
+*{ margin: 0;
+		padding: 0;}
+
+.icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+ body{ height: 11111px;
+ 		font-family:"微软雅黑"}   
+ /*TOP STRIP*/		
+.top-outerWrapper{ background: #444;
+					right:0;
+					width: 100%;
+					height: 40px;}
+					
+.topStrip{ margin: 0 auto;
+			height: 40px;
+			max-width: 976px;
+			text-decoration: none;  /*-color  -line -style*/
+			text-overflow: ellipsis;  /*省略号*/
+			text-align: right;
+			line-height: 40px;
+			color: #a8a8aa;
+			font-size: 12px;}
+/*NAV*/			
+.navBar{height: 44px;
+		width: 100%;
+		background: rgba(0,0,0,0.8);
+		overflow: hidden;
+		}
+.navBar .bar-menu{ 
+					position: relative;	
+					cursor: default;
+					margin: 0 auto;
+					max-width: 1024px;
+					}		
+.navBar .bar-menu>ul>li{ float: left;
+	list-style-type: none;
+	background-origin: content-box;
+	background-position: center center; 
+	color: #fff;
+	font-size: 14px;
+	position: relative;
+	}
+.navBar .bar-menu>ul>li:nth-child(even){
+	margin: 0 66px;
+}	
+		
+.navBar .bar-menu>ul>li>a{ text-decoration: none;
+			color:#FFFFFF;
+			line-height: 44px;
+			display:block;
+			font-family:"book antiqua";
+			padding: 0 10px;
+			}	
+/*.navBar .bar-menu>ul>li:nth-child(1)>a{
+	padding-top: 12px;
+}			*/
+
+.navBar .bar-menu>ul>li svg{ height: 22px;
+	width: 22px;
+	color: #fff;	
+	padding-top: 10px;
+	}
+	
+/*BANNER*/	
+.banner{ width: 100%;
+	height: 580px;
+	background: #fafafa;
+	}	
+.banner>h1{ height:60px;
+	font-size: 56px;
+	line-height: 56px;
+	text-align: center;
+	font-weight: 700;
+	display: block;
+	padding-top: 88px;
+	}
+.banner>h2{ height: 31px;
+		margin-top: 8px;
+		font-size:27px;
+			font-weight: 400;
+			text-align: center;
+			display: block;
+			line-height: 31px;}	
+.banner .banner-img{ height: 194px;
+	width: 909px;
+	margin: 0 auto;
+	position: absolute;
+	left: calc(50% + 0px);       /* 1  +  左右空格*/
+	transform: translateX(-50%);  /* 2组合使用 居中*/ 
+	background-repeat: no-repeat;
+	background-image: url(../img/iphone_x_large.jpg);
+	margin-top:90px
+	}	
+/*MAIN 1*/
+.mainWrapper{ width: 100%;
+		height: 600px;
+		background: #b00e23;
+		position: relative;
+		}
+.mainWrapper>.mainTitle{ width: 100%;
+	position: relative;
+	text-align: center;
+	padding-top: 47px;
+	}	
+.mainTitle>.violator{ border: 1px solid #FFFFFF;
+						border-radius: 4px;
+						font-size: 17px;
+						display: inline-block;
+						padding: 4px 15px;
+						color: #FFFFFF;
+						white-space: nowrap;
+						}	
+.mainTitle>h3{ height: 60px;
+				text-align: center;
+				font-size: 56px;
+				font-weight: 700;
+				color: #FFFFFF;
+				margin-top: 20px;
+				line-height: 60px;}	
+.mainLinks{ text-align: center;
+		margin-top: 20px;}
+.mainLinks a{ text-decoration: none;
+				color: #FFFFFF;
+				font-size: 18px;
+				line-height: 22px;
+				}	
+				
+.mainLinks a:after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg);
+    margin-left: 5px;
+    -webkit-transform: rotate(45deg);
+}		
+.mainLinks a:nth-child(1){ margin-right: 20px;}											
+.mainOnePrice{ width: 334px;
+			height: 335px;
+			background-image: url(../img/hero_large.png);
+			margin-top: 62px;
+			left: calc(50% + 0px);
+			position: absolute;
+			transform:translateX(-50%);}
+						
+						
+			
