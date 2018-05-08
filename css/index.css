@@ -15,11 +15,20 @@
 }  
 a{ text-decoration: none;
 	} 
+li{ list-style: none;}	
  @font-face {
  	font-family:setFont;
  	src: url("PFXT.otf");
- }   
- body{ height: 11111px;
+ } 
+ @font-face {
+ 	font-family:pfct;
+ 	src: url("pfct.otf ");
+ }  
+@font-face {
+	font-family:pflight;
+	src: url("pflight.otf");
+}
+ body{ 
  		font-family:setFont;
  		}   
  /*TOP STRIP*/		
@@ -201,7 +210,8 @@ a{ text-decoration: none;
 	background: #eee;
 	}
 .sectionMacbook{ background:#FAFAFA ;}	
-.sectionPod{background: #fafafa;}
+.sectionPod{background: #fafafa;
+		border-bottom: 12px solid #FFFFFF;}
 
 
 .sectionPay,.traded,.sectionPwhy{ 	background: #FAFAFA;
@@ -210,17 +220,19 @@ a{ text-decoration: none;
 				border-right: 12px solid  #FFFFFF;
 				text-align: center;
 				height: 580px;}	
-
+.sectionPwhy{border-bottom: 12px solid #FFFFFF;}
 					
 .sectionWatch>h5,.sectionPay>h5,.sectionMacbook>h5,.traded>h5,.sectionPod>h5,.sectionPwhy>h5{
 				line-height: 20px;
 				font-size: 21px;
 				color: #333;
 				letter-spacing: 2px;
-				margin-top: 20px; }	
+				margin-top: 20px; 
+				z-index: 2;}	
 .sectionPay>h4{font-size: 36px;
 				color: #000;
 				font-family: "微软雅黑";
+				z-index: 2;
 			}				
 												
 .watch-logo{ max-width: 430px;
@@ -273,11 +285,12 @@ a{ text-decoration: none;
 		background-image: url(../img/iphone_switch_large.png);}
 .sectionPwhy{background: linear-gradient(to bottom, #4a8394 0%,#98d8e9 100%);
 		color:#FFFFFF; }
-/*.traded-img{height: 430px;
+/*.traded-img{height:490px;
 			width: 516px;
 			background-repeat: no-repeat;
 			margin: 0 auto;
-	background-image:url(../img/trade_up_large.jpg);
+			bottom: 0;
+	
 }*/
 /*.pay-img{ width: 100%;
 			height: 100%;
@@ -285,13 +298,75 @@ a{ text-decoration: none;
 			left: 0;
 			position: relative;
 			}
-.pay-img-1{ background:url(../img/apple_pay_new_life_large.jpg);
-			left: calc(50% + 0px);
-			position: absolute;
-			height:580px;
-			width: 1262px;
-			bottom: 0;
+.pay-img-1{ background-image:url(../img/apple_pay_new_life_medium.jpg);
+			margin: 0 auto;
+			height:450px;
+			width: 	516px;
+			margin-top:-60px;
+			z-index: 1;
+			
 			transform: translateX(-50px);} */
+.globalfooter{ height: 500px;
+				width: 100%;
+				
+				justify-content:flex-start ;
+				background: #F5F5F5;}
+.footerwrapper{ width: 980px;
+		height: 337px;
+		display: flex;
+				flex-wrap: nowrap;
+		margin: 0 auto;}					
+.apple-buy-grid,.apple-about,.apple-account,.apple-application,.apple-stroe{ flex: 1;
+			height: 466px;
+			}
+.apple-buy-grid label,.apple-about label,.apple-account label,.apple-application label,.apple-stroe label{ margin-top: 40px; display: block;}							
+.apple-buy-grid label>h3,.apple-about label>h3,.apple-account label>h3,.apple-application label>h3,.apple-stroe label>h3{ color: #333;
+font-size: 12px;
+margin-bottom: 10px;
+font-weight: 500;
+font-family:"pflight";
+}	
+.apple-buy-grid li>a,.apple-about li>a,.apple-account li>a,.apple-application li>a,.apple-stroe li>a	{ color: #555;
+font-size: 11px;
+line-height: 26px;
+font-family: "PFXT";
+}	
+.footer-shop{ width: 980px;
+	line-height: 40px;
+	font-size: 12px;
+	color: #888;
+	margin: 0 auto;
+	margin-top: 40px;
+	border-bottom: 1px solid  #d6d6d6;}
+.footer-shop a{ color: #0070c9;}	
+.footer-legal-warpper{ color: #888;
+		width: 980px;
+		font-weight: 700;
+		line-height: 40px;
+		font-size: 12px;
+		margin: 0 auto;}	
+.footer-legal { float: left;
+				}					
+.footer-links{ float: left;
+				margin-left: 40px;
+				}
+.footer-links a{ display: inline-block;
+	 line-height: 16px;
+	 width: 60px;
+	 color: #888;
+	 cursor: pointer;
+	 text-align: center;
+	 border-right: 1px solid #A8A8AA;}
+.footer-links a:nth-child(5) { border:none;}	 
+.footer-record{ width: 980px;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #999;
+	line-height: 30px;
+				}						
+							
+								
 			
 	
 				
